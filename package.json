@@ -21,7 +21,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": " REACT_APP_SECRET_CODE=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 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
