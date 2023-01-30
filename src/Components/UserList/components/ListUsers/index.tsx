@@ -11,6 +11,7 @@ import {
   Container,
   ContainerPerfil,
   ContainerRepos,
+  ContainerUserInfo,
   Picture,
 } from "./style";
 
@@ -42,20 +43,19 @@ const ShowUserInfo = ({
     <Container>
       <BackToHome onClick={() => back()}>Back</BackToHome>
       <ContainerPerfil>
-        <div>
+        <ContainerUserInfo>
           <Picture
             src={user.data.avatar_url}
             alt={`${user.data.login} avatar`}
           />
-        </div>
-
-        <div className="dataUsers">
+        </ContainerUserInfo>
+        <ContainerUserInfo className="dataUsers">
           <p>Perfil name: {user.data.login}</p>
           <p>Public Repos.: {repos.data.length}</p>
           <p>
             URL: <a href={user.data.html_url}>{user.data.html_url}</a>
           </p>
-        </div>
+        </ContainerUserInfo>
       </ContainerPerfil>
       <hr />
       <ContainerRepos>

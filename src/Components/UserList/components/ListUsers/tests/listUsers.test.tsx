@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
-import ListUser from "./";
+import ListUser from "..";
 import { ReposMock, UserMock } from "./mocks";
 
 describe("ListUser", () => {

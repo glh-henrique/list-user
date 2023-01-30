@@ -26,26 +26,26 @@ export const ListTopRepositories = styled.div`
   display: flex;
   padding: 10px;
   box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+`;
 
-  .containerImg {
-    margin-right: 10px;
+export const ContainerImg = styled.div`
+  margin-right: 10px;
+  width: 100%;
+  max-width: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+
+  img {
     width: 100%;
-    max-width: 100px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-
-    img {
-      width: 100%;
-    }
   }
+`;
 
-  .containerText {
-    text-align: left;
+export const ContainerText = styled.div`
+  text-align: left;
 
-    p {
-      font-size: 15px;
-    }
+  p {
+    font-size: 15px;
   }
 `;

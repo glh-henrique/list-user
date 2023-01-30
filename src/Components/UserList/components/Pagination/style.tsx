@@ -27,6 +27,7 @@ export const ContainerPagination = styled.div`
   .dots {
     cursor: default;
   }
+  
   span {
     display: block;
   }

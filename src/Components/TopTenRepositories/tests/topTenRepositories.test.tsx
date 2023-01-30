@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
-import TopTenRepositories from "./";
+import TopTenRepositories from "..";
 
 describe("TopTenRepositories", () => {
   it("should render a TopTenRepositories", () => {

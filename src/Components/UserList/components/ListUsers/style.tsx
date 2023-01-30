@@ -15,12 +15,16 @@ export const BackToHome = styled.button`
 
 export const ContainerPerfil = styled.div`
   display: flex;
+`;
 
-  div {
-    margin-right: 10px;
-  }
+export const Picture = styled.img`
+  width: 120px;
+`;
 
-  .dataUsers {
+export const ContainerUserInfo = styled.div`
+  margin-right: 10px;
+
+  &.dataUsers {
     margin: 0;
 
     p {
@@ -36,6 +40,4 @@ export const ContainerRepos = styled.div`
   }
 `;
 
-export const Picture = styled.img`
-  width: 120px;
-`;
+

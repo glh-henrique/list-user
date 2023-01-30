@@ -30,7 +30,12 @@ const Pagination = ({
     <ContainerPagination>
       <ul>
         {pageNumber.map((number: any) => (
-          <li key={number} id="btn-paginate" className="num" onClick={() => paginate(number)}>
+          <li
+            key={number}
+            id="btn-paginate"
+            className="num"
+            onClick={() => paginate(number)}
+          >
             <span key={number}>{number}</span>
           </li>
         ))}

@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
-import Pagination from "./";
+import Pagination from "..";
 
 const paginate = jest.fn();
 

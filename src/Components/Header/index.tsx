@@ -1,6 +1,6 @@
 import React from "react";
 import { useHeader } from "../../Context/HeaderContext";
-import { AppHeader } from "./style";
+import { AppHeader, ContainerSearch, Title } from "./style";
 
 const Header = (): JSX.Element => {
   const { setTextSearch, textSearch, setDotheSearch, setBackToTopTen } =
@@ -26,8 +26,8 @@ const Header = (): JSX.Element => {
 
   return (
     <AppHeader>
-      <p onClick={() => back() }>Search Repos.</p>
-      <div>
+      <Title onClick={() => back() }>Search Repos.</Title>
+      <ContainerSearch>
         <input
           type="text"
           id="user"
@@ -36,7 +36,7 @@ const Header = (): JSX.Element => {
           value={textSearch}
         />
         <button onClick={() => search()}>Search</button>
-      </div>
+      </ContainerSearch>
     </AppHeader>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { HeaderProvider, useHeader } from "./HeaderContext";
+import { HeaderProvider, useHeader } from "../HeaderContext";
 
 const TestingComponent = () => {
   const {
@@ -35,6 +35,5 @@ describe("<HeaderProvider />", () => {
     expect(screen.getByText("backToTopTen: false")).toBeInTheDocument();
     expect(screen.getByText("doTheSearch: true")).toBeInTheDocument();
     expect(screen.getByText("test: test")).toBeInTheDocument();
-
   });
 });

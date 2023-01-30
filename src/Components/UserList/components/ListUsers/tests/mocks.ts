@@ -1,7 +1,7 @@
 import {
   ResponseRepositories,
   ResponseSearchUser,
-} from "../../../../Interfaces";
+} from "../../../../../Interfaces";
 
 export const ReposMock: ResponseRepositories = {
   data: [

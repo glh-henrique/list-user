@@ -4,7 +4,7 @@ import { Repositories } from "../../Interfaces";
 
 import ApiManager from "../../Services/Users.service";
 import Loader from "../Loader";
-import { Container, ListTopRepositories, Title } from "./style";
+import { Container, ContainerImg, ContainerText, ListTopRepositories, Title } from "./style";
 
 const TopTenRepositories = (): JSX.Element => {
   const { loading, setLoading } = useLoading();
@@ -35,13 +35,13 @@ const TopTenRepositories = (): JSX.Element => {
           <Title>Top 10 GitHub Repos</Title>
           {responseRequest?.map((repository, index) => (
             <ListTopRepositories key={index}>
-              <div id="ImgRepository" className="containerImg">
+              <ContainerImg id="ImgRepository" className="containerImg">
                 <img
                   src={repository.owner.avatar_url}
                   alt={`${repository.full_name} avatar`}
                 />
-              </div>
-              <div className="containerText">
+              </ContainerImg>
+              <ContainerText className="containerText">
                 <a
                   href={repository.owner.html_url}
                   target="_blank"
@@ -50,7 +50,7 @@ const TopTenRepositories = (): JSX.Element => {
                   {repository.full_name}
                 </a>
                 <p>{repository.description}</p>
-              </div>
+              </ContainerText>
             </ListTopRepositories>
           ))}
         </>

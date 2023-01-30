@@ -1,5 +1,5 @@
-import ApiManegerRepo from './Repos.service'
-import ApiManegerUser from './Users.service'
+import ApiManegerRepo from '../Repos.service'
+import ApiManegerUser from '../Users.service'
 
 const apiManegerUser = new ApiManegerUser()
 const apiManegerRepo = new ApiManegerRepo()
@@ -20,7 +20,6 @@ describe('apiManegerUser', () => {
       // eslint-disable-next-line jest/valid-expect, jest/no-conditional-expect
       expect(Promise.resolve(user.data.login)).resolves.toBe('david');
     }
-
   })
 })
 
