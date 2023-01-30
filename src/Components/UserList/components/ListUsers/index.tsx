@@ -61,8 +61,8 @@ const ShowUserInfo = ({
       <ContainerRepos>
         <p>List Repos.</p>
         <div>
-          {currentRepos.map((repo: Repositories) => (
-            <a href={repo.html_url}>{repo.full_name}</a>
+          {currentRepos.map((repo: Repositories, index) => (
+            <a href={repo.html_url} key={index}>{repo.full_name}</a>
           ))}
         </div>
         {repos.data.length > 10 && (

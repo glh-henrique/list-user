@@ -22,7 +22,6 @@ const TopTenRepositories = (): JSX.Element => {
         .finally(() => setLoading(false));
 
       setLoading(true);
-      
     };
     getRepos();
   }, [setLoading]);
@@ -36,7 +35,7 @@ const TopTenRepositories = (): JSX.Element => {
           <Title>Top 10 GitHub Repos</Title>
           {responseRequest?.map((repository, index) => (
             <ListTopRepositories key={index}>
-              <div className="containerImg">
+              <div id="ImgRepository" className="containerImg">
                 <img
                   src={repository.owner.avatar_url}
                   alt={`${repository.full_name} avatar`}
